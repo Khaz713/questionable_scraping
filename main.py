@@ -8,6 +8,7 @@ from scraper import get_title, get_chapters_number, get_chapter_title, get_chapt
 def main():
     if len(sys.argv) < 2:
         print("Usage: python main.py <url>")
+        return
     if "reader" not in sys.argv[1].split('/')[-1]:
         sys.argv[1] += '/reader'
 
